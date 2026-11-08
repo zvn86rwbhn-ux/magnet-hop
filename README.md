@@ -6,7 +6,7 @@
 
 ## 게임 실행
 
-[실행 파일 ZIP](https://github.com/zvn86rwbhn-ux/magnet-hop/releases/latest/download/Magnet-Adventure-portable.zip)을 내려받아 압축을 풀고, Java 17이 설치된 컴퓨터에서 운영체제에 맞는 파일을 실행합니다.
+[실행 파일 ZIP](https://github.com/zvn86rwbhn-ux/magnet-hop/releases/latest/download/Magnet-Adventure-portable.zip)을 내려받아 압축을 풀고, Java 17과 OpenGL을 지원하는 데스크톱에서 운영체제에 맞는 파일을 실행합니다.
 
 | 운영체제 | 실행 파일 |
 | --- | --- |
@@ -14,7 +14,7 @@
 | macOS | `Run-Mac.command` 또는 `sh Run-Mac.command` |
 | Linux x64 데스크톱 | `sh Run-Linux.sh` |
 
-Apple Silicon Mac에서 전체 스테이지 완주를 확인했습니다. Windows, Linux, Intel Mac은 실기 실행을 확인하지 않았습니다.
+공개 ZIP에서 타이틀 실행, 세 스테이지 완주와 재시작을 확인했습니다. Apple Silicon Mac은 실제 맥에서, Windows Server 2025 x64와 Ubuntu 24.04 x64는 그래픽을 지원하는 가상 환경에서 검증했습니다. Intel Mac 실기 실행은 확인하지 않았습니다.
 
 | 입력 | 동작 |
 | --- | --- |
