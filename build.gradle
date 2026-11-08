@@ -1,0 +1,10 @@
+allprojects {
+    repositories { mavenCentral() }
+}
+subprojects {
+    apply plugin: 'java-library'
+    version = '1.0.0'
+    java.sourceCompatibility = JavaVersion.VERSION_1_8
+    java.targetCompatibility = JavaVersion.VERSION_1_8
+    tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+}

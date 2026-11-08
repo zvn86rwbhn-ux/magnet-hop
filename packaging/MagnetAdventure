@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+bundle_resources="$(cd "$(dirname "$0")/../Resources" && pwd)"
+exec "$bundle_resources/runtime/bin/java" -XstartOnFirstThread -Dapple.awt.application.name="자석의 모험 v3" -jar "$bundle_resources/Magnet-Adventure.jar" "$@"

@@ -1,0 +1,16 @@
+dependencies { api 'com.badlogicgames.gdx:gdx:1.13.1' }
+tasks.register('verifyGame', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'adventure.GameVerification'
+}
+tasks.register('verifyTiming', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'adventure.TimingVerification'
+}
+tasks.register('verifyFeedback', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'adventure.FeedbackVerification'
+}

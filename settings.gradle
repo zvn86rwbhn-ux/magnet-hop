@@ -1,0 +1,2 @@
+rootProject.name = 'MagnetAdventure'
+include 'core', 'lwjgl3'
