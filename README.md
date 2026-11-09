@@ -6,15 +6,19 @@
 
 ## 게임 실행
 
-[실행 파일 ZIP](https://github.com/zvn86rwbhn-ux/magnet-hop/releases/latest/download/Magnet-Adventure-portable.zip)을 내려받아 압축을 풀고, Java 17과 OpenGL을 지원하는 데스크톱에서 운영체제에 맞는 파일을 실행합니다.
+[GitHub Releases](https://github.com/zvn86rwbhn-ux/magnet-hop/releases/tag/v3.0.0)에서 운영체제에 맞는 파일을 받으세요. 아래 세 파일에는 Java 실행 환경이 포함되어 있습니다. 게임에는 OpenGL을 지원하는 데스크톱 환경이 필요합니다.
 
-| 운영체제 | 실행 파일 |
-| --- | --- |
-| Windows x64 | `Run-Windows.bat` |
-| macOS | `Run-Mac.command` 또는 `sh Run-Mac.command` |
-| Linux x64 데스크톱 | `sh Run-Linux.sh` |
+| 운영체제 | 다운로드 | 실행 방법 |
+| --- | --- | --- |
+| Windows x64 | [설치 파일 (.exe)](https://github.com/zvn86rwbhn-ux/magnet-hop/releases/download/v3.0.0/MagnetHop-Windows-x64.exe) | 설치 후 시작 메뉴에서 MagnetHop 열기 |
+| Linux x64 | [AppImage](https://github.com/zvn86rwbhn-ux/magnet-hop/releases/download/v3.0.0/MagnetHop-Linux-x64.AppImage) | 파일 속성에서 실행 권한을 허용한 뒤 열기 |
+| Apple Silicon Mac | [디스크 이미지 (.dmg)](https://github.com/zvn86rwbhn-ux/magnet-hop/releases/download/v3.0.0/MagnetHop-macOS-AppleSilicon.dmg) | DMG 안의 `자석의 모험 v3.app` 열기 |
 
-공개 ZIP에서 타이틀 실행, 세 스테이지 완주와 재시작을 확인했습니다. Apple Silicon Mac은 실제 맥에서, Windows Server 2025 x64와 Ubuntu 24.04 x64는 그래픽을 지원하는 가상 환경에서 검증했습니다. Intel Mac 실기 실행은 확인하지 않았습니다.
+Mac 앱은 Apple Developer ID 서명과 공증을 받지 않아 다운로드한 앱을 macOS가 차단할 수 있습니다. Linux에서 FUSE 사용이 제한되면 실행 권한을 준 뒤 `APPIMAGE_EXTRACT_AND_RUN=1 ./MagnetHop-Linux-x64.AppImage`로 열 수 있습니다.
+
+[공통 실행 ZIP](https://github.com/zvn86rwbhn-ux/magnet-hop/releases/download/v3.0.0/Magnet-Adventure-portable.zip)도 받을 수 있습니다. 이 방식은 Java 17을 설치하고 `Run-Windows.bat`, `Run-Mac.command` 또는 `sh Run-Linux.sh`로 실행합니다. Intel Mac에서는 공통 ZIP과 Intel용 Java 17을 사용하며, Intel Mac 실기 실행은 확인하지 않았습니다.
+
+새 패키지의 타이틀 화면을 Apple Silicon Mac 실기와 Windows Server 2025 x64·Ubuntu 24.04 x64 가상 환경에서 확인했습니다. 같은 게임 JAR로 세 스테이지 완주와 재시작도 확인했습니다.
 
 | 입력 | 동작 |
 | --- | --- |
